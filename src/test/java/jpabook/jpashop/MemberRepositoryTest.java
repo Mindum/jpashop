@@ -30,7 +30,7 @@ public class MemberRepositoryTest {
         Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());
         Assertions.assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
 
-        //sdfasdf
+        //데이터베이스 파일을 키고 해야 하는데 어떻게 하는지 모르겠어
 
     }
 }
