@@ -31,6 +31,7 @@ public class MemberRepositoryTest {
         Assertions.assertThat(findMember.getUsername()).isEqualTo(member.getUsername());
 
         //데이터베이스 파일을 키고 해야 하는데 어떻게 하는지 모르겠어
+        //8082포트로 들어가도 안댐
 
     }
 }
