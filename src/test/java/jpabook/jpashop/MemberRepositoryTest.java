@@ -22,12 +22,17 @@ public class MemberRepositoryTest {
         Member member = new Member();
         member.setUsername("memberA");
 
+        Member member1 = new Member();
+        member.setUsername("memberB");
+
         //when
         Long saveId = memberRepository.save(member);
         Member findMember = memberRepository.find(saveId);
 
         Long savepassward = memberRepository.save(member);
         Member findmember2 = memberRepository.find(saveId);
+
+
 
         //then
         Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());
