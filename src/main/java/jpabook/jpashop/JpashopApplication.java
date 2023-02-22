@@ -9,5 +9,5 @@ public class JpashopApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JpashopApplication.class, args);
 	}
-	//jpa + spring 활용1편 시작
+
 }
