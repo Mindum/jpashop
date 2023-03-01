@@ -17,7 +17,7 @@ d
         return member.getId();
     }
     public Long save1(Member member){
-
+        em.persist(member);
     }
 
     public Member find(Long id){
