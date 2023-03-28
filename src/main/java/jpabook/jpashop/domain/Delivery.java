@@ -10,6 +10,7 @@ import javax.persistence.*;
 @Getter @Setter
 public class Delivery {
 
+    @OneToMany
     @Id @GeneratedValue
     @Column(name = "delivery_id")
     private Long id;
