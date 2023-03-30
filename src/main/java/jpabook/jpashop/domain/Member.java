@@ -25,5 +25,5 @@ public class Member {
 
     @JsonIgnore
     @OneToMany(mappedBy = "member")
-    private List<Order> orders = new ArrayList<>();
+    private List<Order> orders = new ArrayList<>(); //이 커넥션은 건들지 않는게 좋음 null문제에서 안전하기 위해서 하는 것
 }
