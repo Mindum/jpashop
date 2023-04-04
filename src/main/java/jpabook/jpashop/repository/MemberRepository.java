@@ -13,7 +13,7 @@ import java.util.List;
 public class MemberRepository {
 
     //@PersistenceContext는 스프링을 쓸 때 사용 boot를 사용하면 보통 오토와이어드를 사용
-    private EntityManager em;
+    private final EntityManager em;
 
     public void save(Member member){
         em.persist(member);
@@ -28,7 +28,8 @@ public class MemberRepository {
                 .getResultList();
     }
 
-    public List<Member> findByName(String name){
+
+    public List<Member> findByName(String name) {
         return em.createQuery("select m from Member m where m.name = :name", Member.class)
                 .setParameter("name", name)
                 .getResultList();
