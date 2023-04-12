@@ -32,8 +32,6 @@ public class OrderRepository {
                 .setParameter("name", orderSearch.getMemberName())
                 .setMaxResults(1000)
                 .getResultList();
-
-
     }
 
 }
